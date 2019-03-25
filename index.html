@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Hare eller skildpade?!</title>
+<link href ="style.css" rel ="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<script src = "main.js"></script>
+
+</head>
+
+
+<body>
+
+
+
+<h1>Velkommen til vores Quiz!</h1>
+
+
+<form id = "quiz" name = "quiz">
+
+
+<p class = "questions">Er det lovpligtigt at bruge cykelhjelm i Danmark?</p>
+<input id = "textbox" type = "text" name = "question1">
+
+<p class = "questions">Du får et klip i kørekortet hvis du kører (  ) for stærkt...</p>
+<input type = "radio" id = "mc" name = "question2" value = "10%">10%<br>
+<input type = "radio" id = "mc" name = "question2" value = "20%">20%<br>
+<input type = "radio" id = "mc" name = "question2" value = "30%">30%<br>
+
+<p class = "questions">Du møder et lyskryds på vejen, det er gult, hvad gør du?</p>
+
+<input type = "radio" id = "mc" name = "question3" value = "Sætter farten op">Sætter farten op<br>
+<input type = "radio" id = "mc" name = "question3" value = "Sætter farten ned og stopper ved krydset.">Sætter farten ned og stopper ved krydset.<br>
+<input type = "radio" id = "mc" name = "question3" value = " Stopper med det samme.">Stopper med det samme.<br>
+
+
+<input id = "button" type = "button" class ="pulse" value = "Færdig!" onclick = "check();">
+
+
+</form>
+
+
+
+<div id = "after_submit">
+<p id = "number_correct"></p>
+<p id = "message"></p>
+<img id = "picture">
+</div>
+
+
+</body>
+
+</html>
+
