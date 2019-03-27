@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Hare eller skildpade?</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Germania+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet">
+    <meta name="description" content="Quiz-spil">
+    <meta name="keywords" content="Quiz-spil,Quiz, quiz, Rådet for sikker trafik, cykelsikkerhed, cykel, hare eller skildpade">
+
+    <script src="main.js"></script>
+
+
+</head>
+
+
+<body>
+
+    <div id="wrapper">
+
+        <div id="bkimg">
+            <div id="title" class="pulse"></div>
+            <div id="hare"></div>
+            <div id="turtle"></div>
+
+        </div>
+
+
+
+        <h1>Velkommen til vores Quiz!</h1>
+
+
+        <form id="quiz" name="quiz">
+
+
+            <p class="questions">Er det lovpligtigt at bruge cykelhjelm i Danmark?</p>
+            <input id="textbox" type="text" name="question1">
+
+            <p class="questions">Du får et klip i kørekortet hvis du kører ______ for stærkt...</p>
+            <input type="radio" id="mc" name="question2" value="10%">10%<br>
+            <input type="radio" id="mc" name="question2" value="20%">20%<br>
+            <input type="radio" id="mc" name="question2" value="30%">30%<br>
+
+            <p class="questions">Du møder et lyskryds på vejen, det er gult, hvad gør du?</p>
+
+            <input type="radio" id="mc" name="question3" value="Sætter farten op">Sætter farten op<br>
+            <input type="radio" id="mc" name="question3" value="Sætter farten ned og stopper ved krydset">Sætter farten ned og stopper ved krydset.<br>
+            <input type="radio" id="mc" name="question3" value=" Stopper med det samme">Stopper med det samme.<br>
+
+            <p class="questions">Du er på cykel og du ser en lastbil ved krydset. I skal begge to ligud, hvad gør du?</p>
+
+            <input type="radio" id="mc" name="question4" value="Kører op ved siden af lastbilen og venter på grønt lys">Kører op ved siden af lastbilen og venter på grønt lys<br>
+
+            <input type="radio" id="mc" name="question4" value="Prøver at få chaufførens opmærksomhed">Prøver at få chaufførens opmærksomhed<br>
+
+            <input type="radio" id="mc" name="question4" value="Stopper bag ved lastbilen og lader ham køre først">Stopper bag ved lastbilen og lader ham køre først<br>
+
+            <p class="questions">Du har købt en ny cykelanhænger til din cykel. Hvor mage kilo må du højest have på anhængeren?</p>
+
+            <input type="radio" id="mc" name="question5" value="60kg">60kg<br>
+
+            <input type="radio" id="mc" name="question5" value="40kg">40kg<br>
+
+            <input type="radio" id="mc" name="question5" value="80kg">80kg<br>
+
+            <input id="button" type="button" class="pulse" value="Færdig!" onclick="check();">
+
+            <button_2 onclick="myFunction()" class="pulse">Se korrekt svar</button_2>
+
+        </form>
+
+        <div id="after_submit">
+            <p id="number_correct"></p>
+            <p id="message"></p>
+            <img id="picture">
+        </div>
+
+        <div id="link">
+            <p>Vil du vide mere om sikkerhed på cykel?</p><a href="https://www.sikkertrafik.dk/" class="pulse" target="_blank">Besøg Rådet for sikker trafik.</a>
+
+        </div>
+
+
+
+        <div id="korrekt">
+
+            <p>Spørgsmål 1 = Nej.</p>
+            <p>Spørgsmål 2 = 30%.</p>
+            <p>Spørgsmål 3 = Sætter farten ned og stopper ved krydset.</p>
+            <p>Spørgsmål 4 = Stopper bag ved lastbilen og lader ham køre først.</p>
+
+        </div>
+    </div>
+</body>
+
+</html>
